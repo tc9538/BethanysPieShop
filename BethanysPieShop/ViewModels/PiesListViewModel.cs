@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.ViewModels
 {
-    public class PieListViewModel
+    public class PiesListViewModel
     {
         public IEnumerable<Pie> Pies { get; set; }
         public string CurrentCategory { get; set; }

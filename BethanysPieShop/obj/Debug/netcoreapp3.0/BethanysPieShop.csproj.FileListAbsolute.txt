@@ -99,3 +99,6 @@ C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcore
 C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Carousel.cshtml.g.cs
 C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Users\trucc\source\repos\PS\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp3.0\Razor\Views\Contact\Index.cshtml.g.cs
