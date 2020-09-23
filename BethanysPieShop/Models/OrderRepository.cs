@@ -22,6 +22,12 @@ namespace BethanysPieShop.Models
 
             _appDbContext.Orders.Add(order);
             var shoppingCartItems = _shoppingCart.ShoppingCartItems;
+            order.OrderTotal = _shoppingCart.GetShoppingCartTotal();
+
+            if(order.OrderDetails == null)
+            {
+                order.OrderDetails = new List<OrderDetail>();
+            }
 
             foreach (var shoppingCartItem in shoppingCartItems)
             {
@@ -36,6 +42,7 @@ namespace BethanysPieShop.Models
                 order.OrderDetails.Add(orderDetail);
             }
 
+            _appDbContext.Orders.Add(order);
             _appDbContext.SaveChanges();
         }
     }
