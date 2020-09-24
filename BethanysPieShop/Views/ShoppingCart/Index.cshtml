@@ -13,19 +13,21 @@
     <tbody>
         @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
         {
-            <tr>
-                <td class="text-center">@line.Amount</td>
-                <td class="text-left">@line.Pie.Name</td>
-                <td class="text-right">@line.Pie.Price.ToString("c")</td>
-                <td class="text-right">
-                    @((line.Amount * line.Pie.Price).ToString("c"))
-                </td>
-            </tr>
+        <tr>
+            <td class="text-center">@line.Amount</td>
+            <td class="text-left">@line.Pie.Name</td>
+            <td class="text-right">@line.Pie.Price.ToString("c")</td>
+            <td class="text-right">
+                @((line.Amount * line.Pie.Price).ToString("c"))
+            </td>
+        </tr>
         }
+
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3" class="text-right">Total:</td>
+
             <td class="text-right">
                 @Model.ShoppingCartTotal.ToString("c")
             </td>
