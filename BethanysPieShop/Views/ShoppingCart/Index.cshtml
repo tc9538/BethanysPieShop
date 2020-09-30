@@ -4,7 +4,7 @@
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>Selected amount</th>
+            <th colspan="3">Selected amount</th>
             <th>Pie</th>
             <th class="text-right">Price</th>
             <th class="text-right">Subtotal</th>
@@ -14,7 +14,19 @@
         @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
         {
         <tr>
+            <td class="text-center">
+                <a class="btn btn-primary"
+                   asp-controller="ShoppingCart"
+                   asp-action="RemoveFromShoppingCart"
+                   asp-route-pieId="@line.Pie.PieId">-</a>
+            </td>
             <td class="text-center">@line.Amount</td>
+            <td class="text-center">
+                <a class="btn btn-primary"
+                   asp-controller="ShoppingCart"
+                   asp-action="AddToShoppingCart"
+                   asp-route-pieId="@line.Pie.PieId">+</a>
+            </td>
             <td class="text-left">@line.Pie.Name</td>
             <td class="text-right">@line.Pie.Price.ToString("c")</td>
             <td class="text-right">
