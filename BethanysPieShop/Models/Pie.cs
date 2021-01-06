@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BethanysPieShop.Models
 {
     public class Pie
     {
+      
         public int PieId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
@@ -21,5 +25,6 @@ namespace BethanysPieShop.Models
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public string Notes { get; set; }
+        public PieFeedback Feedback { get; set; }
     }
 }
