@@ -1,6 +1,5 @@
 ﻿@model Pie
 <h2>@Model.Name</h2>
-
 <div class="thumbnail">
     <img alt="@Model.Name" src="@Model.ImageUrl">
     <div class="caption-full">
@@ -18,3 +17,9 @@
         </div>
     </div>
 </div>
+
+<div class="text-center">
+        <a class="btn btn-primary" asp-controller="PieFeedback" asp-action="SubmitFeedback" asp-route-pieId="@Model.PieId">Give Feedback!</a>
+</div>
+
+

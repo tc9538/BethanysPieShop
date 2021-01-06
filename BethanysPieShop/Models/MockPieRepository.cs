@@ -24,5 +24,13 @@ namespace BethanysPieShop.Models
         {
             return AllPies.FirstOrDefault(p => p.PieId == pieId);
         }
+
+        public void SubmitPieFeedback(PieFeedback pieFeedback)
+        {
+
+        }
+
+
+        
     }
 }
